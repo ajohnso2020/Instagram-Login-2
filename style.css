@@ -159,6 +159,7 @@ select {
   -webkit-appearance: none;
   -moz-appearance: none;
   border-radius: 0;
+  
 }
 .last-section form {
     display: inline-block;
@@ -183,7 +184,7 @@ form > i {
     -ms-transform: rotate(45deg);
     -o-transform: rotate(45deg);
 }
-.image-container {
+.image-holder {
     display: none;
 }
 @media only screen and (min-width: 450px) {
@@ -209,25 +210,51 @@ form > i {
   .container {
       width: 50%;
   }
-  .image-container {
+  .image-holder {
     width: 50%;
     display: grid;
     position: relative;
     margin-right: 50px;  
   }
-  .image-container img:nth-child(1){
+  .image-holder img{
     width: 440px;
     height: 615px;
     align-items: center;
     margin-bottom: 100px;
 }
-.image-container img:nth-child(2){
+.images img{
     width: 232px;
-    height: 430px;
+    height: 426px;
     position: absolute;
-    left: 38%;
-    top: 13%;
-    border: 3px solid black;
+    overflow: hidden;
+    left: 39%;
+    top: 13.5%;
+    opacity: 0;
+    animation: images 25s infinite;
+    -webkit-animation: images 25s infinite;
+}
+@keyframes images {
+    25% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 1;
+    }
+}
+.images img:nth-last-of-type(5){
+    animation-delay: 0s;
+}
+.images img:nth-last-of-type(4){
+    animation-delay: 5s;
+}
+.images img:nth-last-of-type(3){
+    animation-delay: 10s;
+}
+.images img:nth-last-of-type(2){
+    animation-delay: 15s;
+}
+.images img:nth-last-of-type(1){
+    animation-delay: 20s;
 }
 .last-container {
     margin-top: 75px;
