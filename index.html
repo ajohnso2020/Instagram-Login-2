@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,42 +9,80 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/bc3f4f41b5.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <div class="container">
-        <div class="content-container-top">
-            <img class="logo"
-                src="https://assets.codepen.io/6060109/ig-logo.png?__cf_chl_captcha_tk__=pmd_bd91bd15cecd674b2b130f21d62c27b39abb9e08-1627330029-0-gqNtZGzNAvijcnBszQei"
-                alt="instagram logo">
-            <form>
-                <div>
-                    <input type="text" name="text" id="text" placeholder="Phone number, username, or email">
+    <div class="outer-container">
+        <div class="container">
+            <div class="content-container-top">
+                <img class="logo"
+                    src="https://assets.codepen.io/6060109/ig-logo.png?__cf_chl_captcha_tk__=pmd_bd91bd15cecd674b2b130f21d62c27b39abb9e08-1627330029-0-gqNtZGzNAvijcnBszQei"
+                    alt="instagram logo">
+                <form>
+                    <div>
+                        <input type="text" name="text" id="text" placeholder="Phone number, username, or email">
+                    </div>
+                    <div>
+                        <input type="password" name="password" id="password" placeholder="Password">
+                    </div>
+                    <button type="submit">Log In</button>
+                </form>
+                <h5><span>OR</span></h5>
+                <div class="facebook">
+                    <i class="fa fa-facebook-square"></i>
+                    <p>Log in with Facebook</p>
                 </div>
-                <div>
-                    <input type="password" name="password" id="password" placeholder="Password">
+                <div class="forgot">
+                    <p>Forgot password?</p>
                 </div>
-                <button type="submit">Log In</button>
-            </form>
-            <h5><span>OR</span></h5>
-            <div class="facebook">
-                <i class="fa fa-facebook-square"></i>
-                <p>Log in with Facebook</p>
             </div>
-            <div class="forgot">
-                <p>Forgot password?</p>
+            <div class="content-container-mid">
+                <p>Don't have an account? <a href="#">Sign up</a></p>
+            </div>
+            <div class="content-container-bottom">
+                <p>Get the app.</p>
+                <div class="app">
+                    <img src="https://assets.codepen.io/6060109/IG-app-store-button.png" alt="">
+                    <img src="https://www.instagram.com/static/images/appstore-install-badges/badge_android_english-en.png/e9cd846dc748.png"
+                        alt="">
+                </div>
+            </div>
+            <div class="last-container">
+                <nav>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Jobs</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">API</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Top Accounts</a></li>
+                    <li><a href="#">Hashtags</a></li>
+                    <li><a href="#">Locations</a></li>
+                </nav>
+                <div class="last-section">
+                    <form action="">
+                        <select name="lang" id="lang">
+                            <option value="English" name="lang">English</option>
+                            <option value="Spanish" name="lang">Spanish</option>
+                            <option value="French" name="lang">French</option>
+                            <option value="Arabic" name="lang">Arabic</option>
+                            <option value="Chinese" name="lang">Chinese</option>
+                        </select>
+                        <i class="arrow down"></i>
+                    </form>
+                    <p>© 2021 Instagram from Facebook</p>
+                </div>
             </div>
         </div>
-        <div class="content-container-mid">
-            <p>Don't have an account? <a href="#">Sign up</a></p>
+        <div class="image-container">
+            <img src="https://www.instagram.com/static/images/homepage/home-phones@2x.png/9364675fb26a.png">
+            <img src="https://assets.codepen.io/6060109/IG-phone.jpeg" alt="">
+            <!----   <img src="https://www.instagram.com/static/images/homepage/screenshot2-2x.jpg/177140221987.jpg" alt="">
+            <img src="https://www.instagram.com/static/images/homepage/screenshot3-2x.jpg/ff2c097a681e.jpg" alt="">
+            <img src="https://www.instagram.com/static/images/homepage/screenshot4-2x.jpg/b27a108592d8.jpg" alt="">
+            <img src="https://www.instagram.com/static/images/homepage/screenshot5-2x.jpg/5e04169b9308.jpg" alt=""> -->
         </div>
-        <div class="content-container-bottom">
-            <p>Get the app.</p>
-            <div class="app">
-                <img src="https://assets.codepen.io/6060109/IG-app-store-button.png" alt="">
-                <img src="https://www.instagram.com/static/images/appstore-install-badges/badge_android_english-en.png/e9cd846dc748.png"
-                    alt="">
-            </div>
-        </div>
-    </div>
     </div>
 </body>
+
 </html>
