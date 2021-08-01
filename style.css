@@ -6,7 +6,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
 }
 .container {
     width: 375px;
@@ -127,11 +127,11 @@ h5 span {
     margin: 0 5px;
 }
 .last-container {
-    width: 79%;
+    width: 79vw;
     margin: auto;
     position: absolute;
-    top: 91%;
-    left: 10%;
+    right: 45px;
+    bottom: -167px;
     height: 151px;
 
 }
@@ -209,6 +209,11 @@ form > i {
     border: 1px solid lightgray;
     background-color: white;
 }
+.last-container {
+    position: absolute;
+    bottom: -430px;
+    left: 10px;
+}
 .last-section form {
    margin-right: 5px; 
 }
@@ -272,4 +277,9 @@ form > i {
 .last-section form{
     margin-right: 5px;
 }
+}
+@media only screen and (min-width: 876px) {
+ .last-container {
+    bottom: -170px; 
+ }
 }
